@@ -1,12 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Smart Attendance</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Register Student</h2>
+
+<input type="text" id="name" placeholder="Enter name">
+
+<br><br>
+
 <video id="video" autoplay></video>
-<button onclick="capture()">Capture</button>
 
-<table>
+<br>
 
-<tr>
-<th>Student</th>
-<th>Event</th>
-<th>Time</th>
-</tr>
+<button onclick="register()">Register</button>
 
-</table>
+<hr>
+
+<h2>Mark Attendance</h2>
+
+<button onclick="verify()">Verify Face</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
