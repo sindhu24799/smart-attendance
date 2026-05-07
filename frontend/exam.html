@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exam Mode Monitoring</h1>
+    <div class="container">
+        <div class="glass-card" style="max-width: 600px;">
+            <p style="text-align: center; margin-bottom: 20px; color: #ffcccc;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: red; border-radius: 50%; margin-right: 5px; animation: pulse 1.5s infinite;"></span>
+                Monitoring active... Do not switch tabs.
+            </p>
+            <div class="video-container" style="max-width: 100%; height: 350px;">
+                <video id="video" autoplay playsinline></video>
+            </div>
+            
+            <button onclick="window.location.href='index.html'" style="background: rgba(255,255,255,0.1); box-shadow: none; margin-top: 20px;">Exit Exam Mode</button>
+        </div>
+    </div>
+    
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.5; }
+        }
+    </style>
+</body>
+</html>
