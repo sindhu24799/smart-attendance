@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="container" style="flex-direction: column; align-items: center;">
+        <div class="header-actions">
+            <button onclick="window.location.href='index.html'" style="background: rgba(255,255,255,0.1); box-shadow: none;">Back to Home</button>
+            <button onclick="fetchLogs()">Refresh Logs</button>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Event</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="logs-body">
+                    <tr><td colspan="4" style="text-align: center;">Loading logs...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
